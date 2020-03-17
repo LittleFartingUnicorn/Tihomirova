@@ -94,7 +94,7 @@ $user_name = 'Пончик'; // укажите здесь ваше имя
             ?>
              <li class="lots__item lot">
                 <div class="lot__image">
-                    <img src="" width="350" height="260" alt="">
+                    <img src="<?=$value["src"]?>" width="350" height="260" alt="">
                 </div>
                 <div class="lot__info">
                     <span class="lot__category"> <?=$value["category"]?> </span>
