@@ -8,6 +8,20 @@ array("name"=>"Ботинки для сноуборда DC Mutiny Charocal","cat
 array("name"=>"Куртка для сноуборда DC Mutiny Charocal","category"=>"Одежда","price"=>7500,"src"=>"img/lot-5.jpg"),
 array("name"=>"Маска Oakley Canopy","category"=>"Разное","price"=>5400,"src"=>"img/lot-6.jpg"));
 $user_name = 'Пончик'; // укажите здесь ваше имя
+function rub($i,$bool)
+{
+  $i = ceil($i);
+   if ($i > 1000) 
+   {
+       $i = number_format($i, 0, ",", " ");
+   } 
+  if($bool==true)
+  {
+    $i = $i . "<p class='rub'>₽</p>";
+
+  }
+    return $i;
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -59,9 +73,6 @@ $user_name = 'Пончик'; // укажите здесь ваше имя
         <?
 	 }
      ?>
-
-  
-
         </nav>
     </div>
 </header>
@@ -102,7 +113,7 @@ $user_name = 'Пончик'; // укажите здесь ваше имя
                     <div class="lot__state">
                         <div class="lot__rate">
                             <span class="lot__amount">Стартовая цена</span>
-                            <span class="lot__cost"> <?=$value["price"]?> <b class="rub">р</b></span>
+                            <span class="lot__cost"><?=rub($value["price"],true)?> </span>
                         </div>
                         <div class="lot__timer timer">
                             12:23
