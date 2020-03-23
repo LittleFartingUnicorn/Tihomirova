@@ -36,7 +36,11 @@
                             <span class="lot__cost"><?=rub($value["price"],true)?> </span>
                         </div>
                         <div class="lot__timer timer">
+<<<<<<< HEAD
                             <?=date("H:m:s",$dateandtime)?>
+=======
+                            12:23
+>>>>>>> f325b399de0f63636c9f422b99d6bcdbaf9ed849
                         </div>
                     </div>
                 </div>
