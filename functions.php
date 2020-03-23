@@ -38,9 +38,4 @@ function include_template($name, $data) {
  
     return $result;
 }
-<<<<<<< HEAD
-$dateandtime=strtotime("tomorrow")-strtotime("now GMT");
-=======
-
->>>>>>> f325b399de0f63636c9f422b99d6bcdbaf9ed849
 ?>
