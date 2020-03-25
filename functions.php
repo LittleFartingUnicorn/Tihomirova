@@ -8,6 +8,7 @@ array("name"=>"Ботинки для сноуборда DC Mutiny Charocal","cat
 array("name"=>"Куртка для сноуборда DC Mutiny Charocal","category"=>"Одежда","price"=>7500,"src"=>"img/lot-5.jpg"),
 array("name"=>"Маска Oakley Canopy","category"=>"Разное","price"=>5400,"src"=>"img/lot-6.jpg"));
 $user_name = 'Пончик'; // укажите здесь ваше имя
+$dateandtime=strtotime("tomorrow")-strtotime("now GMT");
 function rub($i,$bool)
 {
   $i = ceil($i);
